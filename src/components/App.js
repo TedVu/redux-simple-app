@@ -1,8 +1,11 @@
-import React from 'react';
-
-const App = ()=>{
-    return <div>Hello World</div>;
-}
+import React from "react";
+import SongList from "./SongList";
+const App = () => {
+  return (
+    <div>
+      <SongList />
+    </div>
+  );
+};
 
 export default App;
-

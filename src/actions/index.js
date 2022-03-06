@@ -1,9 +1,7 @@
-
-// Action creators
-const selectSong = (song)=>{
-    return {
-        type : "SELECT_SONG",
-        payload:song
-    }
-}
-
+// Action creators - named export
+export const selectSong = (song) => {
+  return {
+    type: "SONG_SELECTED",
+    payload: song,
+  };
+};

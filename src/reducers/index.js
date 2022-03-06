@@ -15,6 +15,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
   return selectedSong;
 };
 
+// This is our store which contains global store
 export default combineReducers({
   songs: songsReducer,
   selectedSong: selectedSongReducer,

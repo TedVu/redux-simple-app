@@ -5,9 +5,11 @@ class SongList extends React.Component {
   render() {
     return (
       <div>
-        {this.props.songs.map((song) => {
-          console.log(song);
-        })}
+        <ul>
+          {this.props.songs.map((song) => {
+            return <li>{song.title}</li>;
+          })}
+        </ul>
       </div>
     );
   }
@@ -18,4 +20,5 @@ const mapStateToProps = (state) => {
 };
 
 // connect returns a function and invoke a function
+// A very interesting syntax
 export default connect(mapStateToProps)(SongList);
